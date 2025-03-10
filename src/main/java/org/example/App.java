@@ -18,11 +18,19 @@ package org.example;
  */
 public class App 
 {
-    protected byte numero;
-
-    public App (byte numero){
-        this.numero = numero;
-
+    private byte numero;
+    public App(byte numero){
+            this.numero = numero;
     }
 
+    @Override
+    public String toString() {
+        if (numero >100 || numero<0){
+            return "valor invalido digite uma nota entre 0 e 100";
+        }
+        else {return "nota : " +
+                numero
+                ;}
+
+    }
 }
