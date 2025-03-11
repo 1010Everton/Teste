@@ -1,10 +1,12 @@
 package org.example.While;
 
+import java.util.Random;
+
 public class NumeroDaSorte {
-    byte numero_da_sorte;
+    Random random = new Random();
+    private byte numero_da_sorte = (byte) random.nextInt(256);
 
-
-    public numeroDaSorte(byte numero_da_sorte) {
-        this.numero_da_sorte = numero_da_sorte;
+    public byte getNumero_da_sorte() {
+        return numero_da_sorte;
     }
 }
