@@ -31,6 +31,9 @@ public class App
         else {return "nota : " +
                 numero
                 ;}
+    }
 
+    public byte getNumero() {
+        return numero;
     }
 }

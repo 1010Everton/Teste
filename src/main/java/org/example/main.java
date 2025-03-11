@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        byte nota = scan.nextByte();
-        App notapv = new App(nota);
+        byte numero = scan.nextByte();
+        Leitura result = new Leitura();
+        result.resultado(new App(numero));
 
-        System.out.print(notapv);
+        System.out.print(result.app);
     }
 }
