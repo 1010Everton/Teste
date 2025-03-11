@@ -1,6 +1,6 @@
-package org.example;
+package org.example.Estruturas_de_controle.IF;
 
-import java.util.Scanner;
+import org.example.Estruturas_de_controle.IF.App;
 
 public class Leitura {
 

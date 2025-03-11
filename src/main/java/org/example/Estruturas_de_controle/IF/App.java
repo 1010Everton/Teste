@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Estruturas_de_controle.IF;
 
 /**
  *  1 - Peça ao usuário para inserir uma nota (valor numérico entre 0 e 100).
