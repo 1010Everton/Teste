@@ -9,6 +9,6 @@ public class main {
         Leitura result = new Leitura();
         result.resultado(new App(numero));
 
-        System.out.print(result.app);
+        System.out.print(result.resultado());
     }
 }
