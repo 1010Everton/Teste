@@ -5,14 +5,17 @@ public class Tentativas {
     private int tentativas;
 
     public Tentativas(int tentativas, NumeroDaSorte numeroDaSorte) {
-        this.tentativas = tentativas;
-        this.numeroDaSorte = numeroDaSorte;
+        while (tentativas != numeroDaSorte.getNumero_da_sorte()) {
+            this.tentativas = tentativas;
+            this.numeroDaSorte = numeroDaSorte;
+            if (tentativas == numeroDaSorte.getNumero_da_sorte()) {
+                System.out.println("Parabéns! Você acertou.");
+                break;
+            } else {
+                System.out.println("Tente novamente.");
+            }
 
-        if (tentativas == numeroDaSorte.getNumero_da_sorte()) {
-            System.out.println("Parabéns! Você acertou.");
-        } else {
-            System.out.println("Tente novamente.");
-        }
+    }
     }
 
     public void setNumeroDaSorte(NumeroDaSorte numeroDaSorte) {
