@@ -8,10 +8,10 @@ public class main {
         Scanner scan = new Scanner(System.in);
         NumeroDaSorte sorte = new NumeroDaSorte();
         System.out.print(sorte.getNumero_da_sorte());
-        System.out.println(" Digite um número entre 0 e 255:");
+        System.out.print(" Digite um número entre 0 e 255:");
         int tentativa1 = scan.nextInt();
 
-        new Tentativas(tentativa1, sorte);
+        new Tentativa(tentativa1,sorte);
     }
 
 }
