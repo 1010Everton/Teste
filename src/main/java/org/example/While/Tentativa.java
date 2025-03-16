@@ -7,10 +7,15 @@ public class Tentativa {
     public Tentativa(int tentativa, NumeroDaSorte numeroDaSorte) {
             this.tentativa = tentativa;
             this.numeroDaSorte = numeroDaSorte;
-            while (tentativa != numeroDaSorte.getNumero_da_sorte()){
-                System.out.print("Tente novamente : ");
-                tentativa = new java.util.Scanner(System.in).nextInt();
+
+        do{
+
+                if (tentativa != numeroDaSorte.getNumero_da_sorte()){
+                    System.out.print("Tente novamente : ");
+                    tentativa = new java.util.Scanner(System.in).nextInt();
+                }
             }
+            while (tentativa != numeroDaSorte.getNumero_da_sorte());
             if (tentativa == numeroDaSorte.getNumero_da_sorte()){
                 System.out.print("Parabens!Você Acertou");
             }
